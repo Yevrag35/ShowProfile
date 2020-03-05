@@ -1,5 +1,5 @@
 ﻿class BaseEditor {
-    hidden [string] $Path
+    hidden [string] $Path = ""
     [string] $Executable
     [bool] $IsValid
     [string] $Name
@@ -12,7 +12,7 @@
 
     hidden [void] Check()
     {
-        if ((Test-Path -Path $this.Path))
+        if (-not [string]::IsNullOrWhiteSpace($this.Path) -and (Test-Path -Path $this.Path))
         {
             $this.Executable = $this.Path
             $this.IsValid = $true
