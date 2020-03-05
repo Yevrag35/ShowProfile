@@ -1,5 +1,8 @@
 ﻿Function Show-Profile()
 {
+	<#
+		.EXTERNALHELP ..\en-US\ShowProfile.psm1-Help.xml
+	#>
 	[CmdletBinding()]
 	[Alias("shpf", "profile")]
     param()
@@ -20,7 +23,7 @@
 			Position = 0
 		}
 		$attCol.Add($pAtt)
-		$alias = New-Object System.Management.Automation.AliasAttribute("OpenIn")
+		$alias = New-Object System.Management.Automation.AliasAttribute("OpenIn", "in")
 		$attCol.Add($alias)
 		$valSet = New-Object System.Management.Automation.ValidateSetAttribute($editors)
 		$attCol.Add($valSet)
