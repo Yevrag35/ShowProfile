@@ -7,6 +7,5 @@ Write-Verbose "Importing Class:`tBaseEditor"
 foreach ($file in $(Get-ChildItem -Path $functionFolders -Filter *.ps1 -Exclude "BaseEditor.ps1" -Recurse))
 {
     Write-Verbose "Importing Class/Function: $($file.BaseName)"
-    Write-Host $file.FullName
     . $file.FullName
 }

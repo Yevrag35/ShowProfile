@@ -21,7 +21,7 @@ ModuleVersion = '1.0'
 GUID = '3921d4ac-93e1-4e30-8cc3-cc2387a8f56d'
 
 # Author of this module
-Author = 'Mike'
+Author = 'Mike Garvey'
 
 # Company or vendor of this module
 CompanyName = 'Yevrag35, LLC.'
@@ -30,7 +30,7 @@ CompanyName = 'Yevrag35, LLC.'
 Copyright = '(c) 2018-2020 Yevrag35, LLC. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'Small PowerShell module to easily open your profile in editor(s) of your choice.'
 
 # Minimum version of the Windows PowerShell engine required by this module
 PowerShellVersion = '5.0'

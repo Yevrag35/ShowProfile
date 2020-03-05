@@ -16,6 +16,11 @@
         {
             $this.Executable = $this.Path
             $this.IsValid = $true
+            $checkVar = Get-Variable -Name "ShowProfile_$($this.Name)" -ErrorAction SilentlyContinue
+            if ($null -ne $checkVar -and $checkVar.Value -is [int])
+            {
+                $this.Priority = $checkVar.Value -as [int]
+            }
         }
         else
         {

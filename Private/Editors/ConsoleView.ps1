@@ -1,6 +1,4 @@
 ﻿class ConsoleView : BaseEditor {
-    [string] $Executable
-    [bool] $IsValid
     [string] $Name = "Console"
     [int] $Priority = 1000
 
